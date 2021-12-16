@@ -1,0 +1,116 @@
+/*custom*/
+.bgcolor {
+  background-color: #218795;
+}
+.content {
+  text-align: center;
+}
+.drop:hover, .drop:focus {
+  color: #218795;
+  background-color: #0c707e;
+}
+.editin {
+  border: none;
+  height: 32px;
+  margin-left: 8px;
+}
+.lbgcolor {
+  background-color: #8cc0c7;
+}
+.m-b-md {
+  margin: 50px 0;
+}
+::placeholder {
+  color: rgba(131, 131, 131, 0.856);
+  font-style: italic;
+}
+.task-index h1 {
+  margin-bottom: 40px;
+}
+.task-index .task-item {
+  margin: 0;
+  padding: 5px 5px 5px 15px;
+  background: #f4f4f4;
+  border: 1px solid #218795;
+}
+.task-index .task-item .buttonleft {
+  width: 50px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.task-index .task-item .buttonright {
+  width: 50px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+.task-index .task-item h4 {
+  display: inline-block;
+  font-weight: normal;
+  margin: 0 0 0 20px;
+}
+.task-index .task-item h4 a {
+  color: #777;
+  text-decoration: none !important;
+}
+.title {
+  font-size: 50px;
+  text-transform: uppercase;
+  border-bottom: 2px solid;
+  padding: 12px 0;
+}
+.txtcolor {
+  color: #218795;
+}
+.wrapper {
+  max-width: 1140px;
+  padding: 30px ;
+  margin: 20px auto;
+  background-color: #8cc0c7;
+  border: 5px ridge #218795;
+}
+/*add task bar*/
+#myname {
+  width: 27%;
+  transition: width 0.4s ease-in-out;
+}
+  #myname:focus {
+    width: 100%;
+  }
+
+/*small devices*/
+@media screen and (max-width:600px) {
+  .task-index .task-item .buttonright, .task-index .task-item .buttonleft, .task-index .task-item .fas { 
+    padding: 0;
+    width: 26px;
+    text-align: center;
+    vertical-align: baseline;
+  }
+  .task-index .task-item, .editin{
+    padding: 0;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+  }
+  .editin {
+    width:50px;
+    height:23px;
+  }
+  .task-index .task-item h4 {
+    margin: 0;
+    font-weight: normal;
+    font-size: small;
+  }
+}
+  /*medium devices*/
+@media screen and (min-width: 992px) {
+  .wrapper { 
+    margin: 20px 200px;
+    padding: 30px 70px;
+  } 
+}
+  /*big devices*/
+@media screen and (min-width: 1200px) {
+  .wrapper { 
+    margin: 20px 300px;
+    padding: 30px 70px;
+  } 
+}
